@@ -63,9 +63,9 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-                    <TextBox Grid.Column="1" TextChanged="OnTextBoxTextChanged" Width="800" Height="40" Padding="0 10 0 10">
+                    <TextBox Name="myTextBox" Grid.Column="1" TextChanged="OnTextBoxTextChanged" Width="800" Height="40" Padding="0 10 0 10">
                         <TextBox.Background>
-                            <ImageBrush ImageSource="TextBoxBackground.gif" AlignmentX="Left" Stretch="None" />
+                            <ImageBrush ImageSource="C:\Users\madgw\source\repos\SongAppV0\SongAppV0\Search.png" AlignmentX="Left" Stretch="None"/>
                         </TextBox.Background>
                     </TextBox>
                     <Ellipse Grid.Column="2" Width="50" Height="50" Fill="Blue" Margin="15"/>

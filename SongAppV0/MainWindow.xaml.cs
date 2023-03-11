@@ -24,5 +24,27 @@ namespace SongAppV0
         {
             InitializeComponent();
         }
+        void OnTextBoxTextChanged(object sender, TextChangedEventArgs e)
+        {
+
+            if (myTextBox.Text == "")
+            {
+                // Create an ImageBrush.
+                ImageBrush textImageBrush = new ImageBrush();
+                textImageBrush.ImageSource =
+                    new BitmapImage(
+                        new Uri(@"Search.png", UriKind.Relative)
+                    );
+                textImageBrush.AlignmentX = AlignmentX.Left;
+                textImageBrush.Stretch = Stretch.None;
+                // Use the brush to paint the button's background.
+                myTextBox.Background = textImageBrush;
+            }
+            else
+            {
+
+                myTextBox.Background = null;
+            }
+        }
     }
 }
